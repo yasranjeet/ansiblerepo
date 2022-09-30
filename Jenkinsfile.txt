@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Get_Playbook') {
             steps {
-                git 'https://gitlab.com/jaya-narayana/devnetopscicdpipeline.git'
+                git 'https://github.com/vishnukiranreddy4/ansiblerepo.git'
             }
         }
         stage('Run_Playbook') {
