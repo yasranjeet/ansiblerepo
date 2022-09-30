@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Clean and prep workspace') {
+        stage('Get_Playbook') {
             steps {
                 git 'https://gitlab.com/jaya-narayana/devnetopscicdpipeline.git'
             }
         }
-        stage('Staging') {
+        stage('Run_Playbook') {
             steps {
                 sh 'ansible-playbook playbook.yml'
             }
